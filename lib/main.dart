@@ -21,21 +21,21 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addObserver(this);
+    // WidgetsBinding.instance?.addObserver(this);
   }
 
   @override
   void dispose() {
-    WidgetsBinding.instance?.removeObserver(this);
+    // WidgetsBinding.instance?.removeObserver(this);
 
     super.dispose();
   }
 
-  void didChangeAppLifeCycleState(AppLifecycleState appLifecycleState) {
-    state = appLifecycleState;
-    print(appLifecycleState);
-    print(":::::::");
-  }
+  // void didChangeAppLifeCycleState(AppLifecycleState appLifecycleState) {
+  //   state = appLifecycleState;
+  //   print(appLifecycleState);
+  //   print(":::::::");
+  // }
 
   @override
   Widget build(BuildContext context) {
